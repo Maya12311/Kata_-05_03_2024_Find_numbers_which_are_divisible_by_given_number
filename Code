@@ -1,0 +1,20 @@
+public class EvenNumbers {
+  public static int[] divisibleBy(int[] numbers, int divider) {
+    int count = 0;
+  for(int one: numbers){
+  
+if(one%divider ==0){
+  count++;
+}
+    }
+    int[] newArray = new int[count];
+    int c = 0;
+    for(int o : numbers){
+      if(o%divider ==0){
+        newArray[c] = o;
+        c++;
+      }
+    }
+    return newArray;
+  }
+}
